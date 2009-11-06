@@ -12,7 +12,7 @@ set nu "line numbers on (set nonu)
 syntax on "turns on syntax highlighting
 
 autocmd FileType python set ft=python.django " For SnipMate
-autocmd FileType html set ft=html.django_template " For SnipMate
+autocmd FileType html set ft=htmldjango.html.django_template " For SnipMate
 
 let g:pydiction_location = '~/.vim/ftplugin/pydiction-1.2/complete-dict'
 
