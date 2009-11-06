@@ -93731,3 +93731,35 @@ django.get_version(
 
 --- from django import * ---
 get_version(
+
+--- import django.contrib ---
+django.contrib.__builtins__
+django.contrib.__doc__
+django.contrib.__file__
+django.contrib.__name__
+django.contrib.__path__
+
+--- from django import contrib ---
+contrib.__builtins__
+contrib.__doc__
+contrib.__file__
+contrib.__name__
+contrib.__path__
+
+--- from django.contrib import * ---
+
+--- import django.views ---
+django.views.__builtins__
+django.views.__doc__
+django.views.__file__
+django.views.__name__
+django.views.__path__
+
+--- from django import views ---
+views.__builtins__
+views.__doc__
+views.__file__
+views.__name__
+views.__path__
+
+--- from django.views import * ---
