@@ -11,8 +11,9 @@ filetype indent plugin on "new in vim 6.0+; file type specific
 set nu "line numbers on (set nonu)
 syntax on "turns on syntax highlighting
 
-autocmd FileType python set ft=python.django " For SnipMate
-autocmd FileType html set ft=htmldjango.html.django_template " For SnipMate
+" these are custom SnipMate settings for django
+autocmd FileType python set ft=python.django 
+autocmd FileType html set ft=htmldjango.html.django_template 
 
 let g:pydiction_location = '~/.vim/ftplugin/pydiction-1.2/complete-dict'
 
