@@ -20,3 +20,4 @@ let g:pydiction_location = '~/.vim/ftplugin/pydiction-1.2/complete-dict'
 :nnoremap <F5> "=strftime("%m/%d/%y %H:%M:%S")<CR>P
 :inoremap <F5> <C-R>=strftime("%m/%d/%y %H:%M:%S")<CR>
 
+:nnoremap <F6> :%s/</\&lt;/g<CR>
