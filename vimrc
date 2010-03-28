@@ -12,8 +12,10 @@ syntax on "turns on syntax highlighting
 
 " these are custom SnipMate settings for django
 autocmd FileType python set ft=python.django|set tw=78 " `gqap` reformat 
-autocmd FileType html set ft=htmldjango.xhtml.django_template 
-autocmd FileType xhtml set ft=htmldjango.xhtml.django_template
+autocmd FileType html set ft=htmldjango.xhtml.django_template ts=2 sw=2 sts=2
+autocmd FileType xhtml set ft=htmldjango.xhtml.django_template ts=2 sw=2 sts=2
+autocmd FileType php set ft=htmldjango.xhtml.django_template ts=2 sw=2 sts=2
+autocmd FileType css set ts=2 sw=2 sts=2
 
 let g:pydiction_location = '~/.vim/ftplugin/pydiction-1.2/complete-dict'
 
