@@ -17,7 +17,7 @@ autocmd FileType xhtml set ft=htmldjango.xhtml.django_template ts=2 sw=2 sts=2
 autocmd FileType php set ft=htmldjango.xhtml.django_template ts=2 sw=2 sts=2
 autocmd FileType css set ts=2 sw=2 sts=2
 
-let g:pydiction_location = '~/.vim/ftplugin/pydiction-1.2/complete-dict'
+let g:pydiction_location = '~/.vim/ftplugin/pydiction/complete-dict'
 
 :nnoremap <F5> "=strftime("%m/%d/%y %H:%M:%S")<CR>P
 :inoremap <F5> <C-R>=strftime("%m/%d/%y %H:%M:%S")<CR>
