@@ -19,7 +19,15 @@ autocmd FileType css set ts=2 sw=2 sts=2
 
 let g:pydiction_location = '~/.vim/ftplugin/pydiction/complete-dict'
 
-:nnoremap <F5> "=strftime("%m/%d/%y %H:%M:%S")<CR>P
-:inoremap <F5> <C-R>=strftime("%m/%d/%y %H:%M:%S")<CR>
+" shows trailing whitespace
+match Todo /\s\+$/
 
-:map <F6> :%s!<!\&lt;!g\|:%s!>!\&gt;!g<CR>
+" removes trailing whitespace when saving certail files
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd BufWritePre *.py :call <SID>StripTrailingWhitespaces()
