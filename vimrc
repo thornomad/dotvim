@@ -9,9 +9,15 @@ set softtabstop=4 "Causes backspace to delete 4 spaces =
 filetype indent plugin on "new in vim 6.0+; file type specific
 syntax on "turns on syntax highlighting
 set nu "line numbers on (set nonu)
-set autochdir
 set wildmode=longest:full
 set wildmenu
+
+"site5 not working with autochdir
+if exists('+autochdir')
+  set autochdir
+else
+  autocmd BufEnter * silent! lcd %:p:h:gs/ /\\ /
+endif
 
 " these are custom SnipMate settings for django
 autocmd FileType python set ft=python.django|set tw=78 " `gqap` reformat 
